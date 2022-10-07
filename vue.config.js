@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: process.env.NODE_ENV === 'production'? '/Noga-s-Portfolio/' : '/'
+    publicPath: process.env.NODE_ENV === 'production'? '/noga-s-portfolio/' : '/'
 }
