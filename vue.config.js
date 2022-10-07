@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: '/noga-s-portfolio/'
+    publicPath: '/Noga-s-Portfolio/'
 }
