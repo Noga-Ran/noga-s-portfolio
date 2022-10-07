@@ -1,0 +1,199 @@
+header {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 2px);
+    justify-content: space-between;
+    align-items: center;
+    // background-color: ;
+    .logo {
+        align-items: center;
+    }
+
+    img {
+        width: 30px;
+        height: 45px;
+    }
+
+    nav *:not(:last-of-type),
+    img {
+        margin-right: 15px;
+    }
+
+    span{
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width:1600px){
+    .logo {
+        margin-left: calc(50vw - 802px);
+    }
+
+    .menu,.menu-button-container {
+        margin-right: calc(50vw - 802px);;
+    }
+}
+
+@media screen and (min-width:1100px) and (max-width:1600px){
+    .logo {
+        margin-left: $desk-pad;
+    }
+
+    .menu,.menu-button-container {
+        margin-right: $desk-pad;
+    }
+}
+
+@media screen and (max-width:1100px) and (min-width:568px) {
+    .logo {
+        margin-left: $tab-pad;
+    }
+
+    .menu,.menu-button-container {
+        margin-right: $tab-pad;
+    }
+}
+
+@media screen and (max-width:568px) {
+    .logo {
+        margin-left: $mo-pad;
+    }
+
+    .menu,.menu-button-container {
+        margin-right: $mo-pad;
+    }
+}
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(17, 17, 17, 0.5607843137);
+    border-bottom: 1px rgba(250, 229, 136, 0.1215686275) solid;
+    // background: linear-gradient(to left, #f46b45, #eea849);
+    // background-image: url(https://res.cloudinary.com/nogacloud/image/upload/v1665077524/portfolio/bg-h.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #FFF;
+    height: 50px;
+    padding-top: 1em;
+    padding-bottom: 1em
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    // margin: 0;
+    padding: 0;
+    z-index: 100;
+    color: #FFF;
+    z-index: 999;
+}
+
+a:-webkit-any-link{
+    color:#FFF;
+}
+
+.menu>a {
+    margin: 0 1rem;
+    overflow: hidden;
+}
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: url(https://res.cloudinary.com/nogacloud/image/upload/v1665132477/portfolio/minimal-sunflower-pointer.png), auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+    cursor: url(https://res.cloudinary.com/nogacloud/image/upload/v1665132477/portfolio/minimal-sunflower-pointer.png), auto;
+}
+
+.menu-button::before {
+    content: '';
+    margin-top: -8px;
+}
+
+.menu-button::after {
+    content: '';
+    margin-top: 8px;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+}
+
+@media (max-width: 700px) {
+    .menu-button-container {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 82px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu-toggle~.menu a {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #menu-toggle:checked~.menu a {
+        border: 1px solid #333;
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .menu>a {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: -webkit-fill-available;
+        color: white;
+        background-color: #111111;
+    }
+
+    .menu>a:not(:last-child) {
+        border-bottom: 1px solid #444;
+    }
+}
