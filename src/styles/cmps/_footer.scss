@@ -1,0 +1,27 @@
+footer{
+    background-color: #1111118f;
+    border-top: 1px #fae5881f solid;
+    color: #FFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 2px);
+    justify-content: center;
+
+    section{
+        display: flex;
+    }
+
+    span{
+        animation: text 5s 1;
+        animation-delay: 1.5s;
+    }
+
+    span:not(:last-of-type){
+        margin-right: 3px;
+    }
+}
