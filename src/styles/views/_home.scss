@@ -1,4 +1,4 @@
-main {
+.home-page{
     padding-top: 83px;
     padding-bottom: 102px;
 
@@ -11,6 +11,7 @@ main {
         img:first-of-type {
             width: -webkit-fill-available;
             border-bottom-right-radius: 83px;
+            max-height: 60vh;
         }
 
         img:nth-of-type(2){
@@ -18,7 +19,7 @@ main {
             left: 50%;
             // transform: translate(-50%, -50%);
             width: 10vw;
-            max-width: 300px;
+            max-width: 100px;
             filter: invert(1);
             cursor: pointer;
             animation: float 6s ease-in-out infinite;
