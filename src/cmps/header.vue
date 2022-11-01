@@ -1,7 +1,7 @@
 <template>
     <header class="flex top-nav">
         <section class="logo flex">
-            <img src="https://res.cloudinary.com/nogacloud/image/upload/v1665063014/portfolio/img-logo.png" alt="">
+            <img src="https://res.cloudinary.com/nogacloud/image/upload/v1667305821/portfolio/NR_1.png" alt="">
             <p>Noga's <span>Portfolio</span></p>
         </section>
         <input id="menu-toggle" type="checkbox" />

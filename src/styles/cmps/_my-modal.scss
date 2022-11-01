@@ -16,9 +16,9 @@
 }
   
 .modal-container {
-    width: 300px;
+    width: 60vw;
+    max-width: 1600px;
     margin: 0px auto;
-    padding: 20px 30px;
     background-color: #fff;
     border-radius: 2px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
@@ -39,6 +39,20 @@
   
 .modal-default-button {
     float: right;
+    background: none;
+    border: none;
+
+    svg{
+        cursor: $sf-p;
+    }
+}
+
+.modal-default-button:hover{
+    color:black;
+}
+
+.work-details{
+    padding: 20px 30px;
 }
   
 .modal-enter {

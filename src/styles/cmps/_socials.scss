@@ -1,0 +1,27 @@
+.socials{
+    margin-top: 45px;
+
+    div:first-of-type{
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    ul{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    li{
+        list-style: none;
+        width: calc(100% - 15px);
+        height: 100%;
+        max-width: 40px;
+    }
+
+    li:not(:last-of-type){
+        margin-right: 15px;
+    }
+}

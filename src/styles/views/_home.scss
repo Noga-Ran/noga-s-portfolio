@@ -1,74 +1,16 @@
-.home-page{
-    padding-top: 83px;
-    padding-bottom: 102px;
-
-    .hero {
-        width: -webkit-fill-available;
-        position: relative;
-        text-align: center;
-        color: white;
-
-        img:first-of-type {
-            width: -webkit-fill-available;
-            border-bottom-right-radius: 83px;
-            max-height: 60vh;
-        }
-
-        img:nth-of-type(2){
-            position: absolute;
-            left: 50%;
-            // transform: translate(-50%, -50%);
-            width: 10vw;
-            max-width: 100px;
-            filter: invert(1);
-            cursor: pointer;
-            animation: float 6s ease-in-out infinite;
-        }
-
-        h1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-    }
-}
-
-@media (max-width: 500px){
-    img:nth-of-type(2){
-        top: 80%;
-    }
-}
-
-@media (min-width: 500px){
-    img:nth-of-type(2){
-        top: 70%;
-    }
-}
-
-@media (min-width: 700px){
-    .hero{
-        h1{
-            font-size: xxx-large;
-        }
-    }
-
-}
-
-@media (max-width: 700px) {
-    .hero{
-        h1{
-            font-size: x-large;
-        }
-    }
-}
-
-@media screen and (min-width:1600px){
-    .hero,main{
-        max-width: 1600px;
-    }
-
-    main{
-        margin: auto;
-    }
+.home-section{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: url(https://res.cloudinary.com/nogacloud/image/upload/v1667305431/portfolio/%D7%A8%D7%A7%D7%A2.jpg) top center no-repeat #bababa;
+    filter: grayscale(85%);
+    background-size: cover;
+    // color: #fff;
+    padding-left: 110px;
+    padding-top: 130px;
+    text-shadow: 1px 1px 2px rgb(0 0 0 / 60%);
+    font-size: 12px;
 }
